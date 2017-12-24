@@ -9,6 +9,6 @@ Plugin.create(:three_billion_devices_run_java) do
     visible: true,
     role: :timeline
   ) do
-    Post.primary_service.update(:message => java)
+    Service.primary.post(:message => java)
   end
 end
