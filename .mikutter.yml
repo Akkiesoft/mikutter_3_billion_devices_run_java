@@ -1,0 +1,11 @@
+---
+slug: :three_billion_devices_run_java
+depends:
+  mikutter: 3.5.15
+  plugin:
+    - command
+    - uitranslator
+version: '1.1'
+author: Akkiesoft
+name: three_billion_devices_run_java
+description: '30億のデバイスで走るJava'
