@@ -5,10 +5,10 @@ Plugin.create(:three_billion_devices_run_java) do
   command(
     :three_billion_devices_run_java,
     name: java,
-    condition: -> _ { true },
+    condition: lambda{ |opt| true },
     visible: true,
     role: :timeline
-  ) do
-    Service.primary.post(:message => java)
+  ) do | opt |
+    compose(opt.world, body: java)
   end
 end
